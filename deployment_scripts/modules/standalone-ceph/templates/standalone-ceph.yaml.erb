@@ -4,5 +4,8 @@
   hash.store "ceph_monitor_nodes", @ceph_monitor_nodes
   hash.store "ceph_primary_monitor_node", @ceph_primary_monitor_node
   hash.store "ceph_rgw_nodes", @ceph_monitor_nodes
+  hash.store "corosync_roles", @corosync_roles
+  hash.store "colocate_haproxy", @colocate_haproxy
+  hash.store "storage", @storage_hash
 -%>
 <%= YAML.dump hash -%>
